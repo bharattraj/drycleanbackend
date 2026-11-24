@@ -99,4 +99,6 @@ public class CustomerServiceImpl implements CustomerService {
 
         return mapToResponse(updatedCustomer);
     }
+    
+    customer.setWhatsappOptIn(Boolean.TRUE.equals(request.getWhatsappOptIn()));
 }
