@@ -33,6 +33,9 @@ public class Customer {
 
     @Column(name = "updated_at")
     private OffsetDateTime updatedAt;
+    
+    @Column(name = "whatsapp_opt_in", nullable = false)
+    private boolean whatsappOptIn = false;
 
     @PrePersist
     protected void onCreate() {
